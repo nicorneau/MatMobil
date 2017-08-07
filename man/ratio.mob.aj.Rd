@@ -2,7 +2,7 @@
 % Please edit documentation in R/ratio_mob_aj.R
 \name{ratio.mob.aj}
 \alias{ratio.mob.aj}
-\title{Calcul le ratio de mobilite ajuste}
+\title{Calcul du ratio de mobilite ajuste}
 \usage{
 ratio.mob.aj(mat)
 }

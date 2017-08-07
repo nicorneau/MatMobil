@@ -1,4 +1,4 @@
-#' @title Calcul le ratio d'immobilite ajuste
+#' @title Calcul du ratio d'immobilite ajuste
 #' 
 #' @description 
 #' \code{ratio.im.aj} calcule le ratio d'immobilite ajuste d'une matrice de transition

@@ -2,7 +2,7 @@
 % Please edit documentation in R/trace_norm.R
 \name{trace.norm}
 \alias{trace.norm}
-\title{Calcul la trace normalisee}
+\title{Calcul de la trace normalisee}
 \usage{
 trace.norm(mat)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/ratio_im.R
 \name{ratio.im}
 \alias{ratio.im}
-\title{Calcul le ratio d'immobilite}
+\title{Calcul du ratio d'immobilite}
 \usage{
 ratio.im(mat)
 }

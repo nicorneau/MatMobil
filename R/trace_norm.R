@@ -1,4 +1,4 @@
-#' @title Calcul la trace normalisee
+#' @title Calcul de la trace normalisee
 #' 
 #' @description 
 #' \code{trace.norm} calcule la trace normalisee d'une matrice de transition

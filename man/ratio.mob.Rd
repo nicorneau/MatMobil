@@ -2,7 +2,7 @@
 % Please edit documentation in R/ratio_mob.R
 \name{ratio.mob}
 \alias{ratio.mob}
-\title{Calcul le ratio de mobilite}
+\title{Calcul du ratio de mobilite}
 \usage{
 ratio.mob(mat)
 }

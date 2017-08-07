@@ -1,4 +1,4 @@
-#' @title Calcul le ratio de mobilite
+#' @title Calcul du ratio de mobilite
 #' 
 #' @description 
 #' \code{ratio.mob} calcule le ratio de mobilite d'une matrice de transition
