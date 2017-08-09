@@ -2,51 +2,51 @@
 % Please edit documentation in R/ind_mob_tps.R
 \name{ind.mob.tps}
 \alias{ind.mob.tps}
-\title{Calcul des indices de mobilite dans le temps}
+\title{Calcul des indices de mobilité dans le temps}
 \usage{
 ind.mob.tps(debut, fin, intervalle, var.t, var.tpk, data, periode = "annee",
   poids = NULL, mobilite = TRUE)
 }
 \arguments{
-\item{debut}{indique la premiere periode a laquelle les indices doivent etre calcules}
+\item{debut}{indique la première période à laquelle les indices doivent être calculés}
 
-\item{fin}{indique la periode a laquelle les calcul doivent s'arreter}
+\item{fin}{indique la période à laquelle les calculs doivent s'arrêter}
 
-\item{intervalle}{indique a des intervalles de combien de periode la fonction doit calculer 
+\item{intervalle}{indique à des intervalles de combien de périodes la fonction doit calculer 
 les indices.}
 
-\item{var.t}{une variable discrete correspondant aux etats possibles a la periode t}
+\item{var.t}{une variable discrète correspondant aux états possibles à la période t}
 
-\item{var.tpk}{une variable discrete correspondant aux etats possibles a la periode t 
+\item{var.tpk}{une variable discrète correspondant aux états possibles à la période t 
 plus l'intervalle k}
 
-\item{data}{un dataframe dans lequel sont contenus var.t et var.tpk}
+\item{data}{un dataframe dans lequel sont contenues var.t et var.tpk}
 
-\item{periode}{une variable definissant les periodes}
+\item{periode}{une variable définissant les périodes}
 
-\item{poids}{une variable contenant les poids a considerer}
+\item{poids}{une variable contenant les poids à considerer}
 
-\item{mobilite}{un parametre logique indiquant si les indices de mobilite ou d'immobilite
-doivent etre retournes}
+\item{mobilite}{un paramètre logique indiquant si les indices de mobilité ou d'immobilité
+doivent être retournés}
 }
 \value{
-une liste de 6 elements
+une liste de 6 éléments
 \item{CALL}{Appel de la fonction}
-\item{data}{Les donnees utilisees pour effectuer le calcul des indices}
-\item{cat.var.t}{Categories que prend la variable var.t}
-\item{cat.var.tpk}{Categories que prend la variable var.tpk}
-\item{Poids}{Nom de la variable "poids" utilisee}
-\item{indices}{Le nom des indices calcules}
-\item{ind}{La valeur des indices calculees pour chaque periode definie}
+\item{data}{Données utilisées pour effectuer le calcul des indices}
+\item{cat.var.t}{Catégories que prend la variable var.t}
+\item{cat.var.tpk}{Catégories que prend la variable var.tpk}
+\item{Poids}{Nom de la variable "poids" utilisée}
+\item{indices}{Noms des indices calculés}
+\item{ind}{Valeur des indices calculés pour chaque période définie}
 }
 \description{
-\code{ind.mob.tps} calcule differents indices de mobilite pour des donnes longitudinales
-selon des periodes d'evaluation a definir
+\code{ind.mob.tps} calcule différents indices de mobilité pour des données longitudinales
+selon des périodes d'évaluation à définir
 }
 \details{
-La variable de la periode t est toujours compare a celle de la periode t plus
-l'intervalle k, l'intervalle comparatif k est donc defini par les donnees. Le parametre
-"intervalle" determine a des intervalles de combien de periode la fonction doit calculer 
+La variable de la période t est toujours comparée à celle de la période t plus
+l'intervalle k. L'intervalle comparatif k est donc défini par les données. Le paramètre
+"intervalle" détermine à des intervalles de combien de périodes la fonction doit calculer 
 les indices.
 }
 \author{

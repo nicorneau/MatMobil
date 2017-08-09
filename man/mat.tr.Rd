@@ -7,32 +7,32 @@
 mat.tr(var.t, var.tpk, data, poids = NULL, prob = FALSE)
 }
 \arguments{
-\item{var.t}{une variable discrete correspondant aux etats possibles a la periode t}
+\item{var.t}{une variable discrète correspondant aux états possibles à la période t}
 
-\item{var.tpk}{une variable discrete correspondant aux etats possibles a la periode t 
+\item{var.tpk}{une variable discrète correspondant aux états possibles à la période t 
 plus l'intervalle k}
 
-\item{data}{un dataframe dans lequel sont contenus var.t et var.tpk}
+\item{data}{un dataframe dans lequel sont contenues var.t et var.tpk}
 
-\item{poids}{une variable contenant les poids a considerer}
+\item{poids}{une variable contenant les poids à considerer}
 
-\item{prob}{un parametre logique indiquant si les cellules de la matrice retournee 
-doivent contenir des probabilites ou le nombre d'observations si retrouvant}
+\item{prob}{un paramètre logique indiquant si les cellules de la matrice retournée 
+doivent contenir des probabilités ou le nombre d'observations qu'elles contiennent}
 }
 \value{
-une liste de 3 elements
+une liste de 3 éléments
 \item{CALL}{Appel de la fonction}
-\item{Poids}{Nom de la variable "poids" utilisee}
-\item{n.obs}{Nombre d'observations (si "poids" specifie, somme des poids individuels)}
-\item{taille.mat}{Taille de la matrice retournee}
-\item{matrice}{La matrice de transition calculee}
+\item{Poids}{Nom de la variable "poids" utilisée}
+\item{n.obs}{Nombre d'observations (si "poids" specifié, somme des poids individuels)}
+\item{taille.mat}{Taille de la matrice retournée}
+\item{matrice}{Matrice de transition calculée}
 }
 \description{
 \code{mat.tr} calcule une matrice de transition
 }
 \details{
-La variable de la periode t est toujours compare a celle de la periode t plus
-l'intervalle k, l'intervalle comparatif k est donc defini par les donnees.
+La variable de la période t est toujours comparée à celle de la période t plus
+l'intervalle k. L'intervalle comparatif k est donc defini par les données.
 }
 \author{
 Nicolas Corneau-Tremblay

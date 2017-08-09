@@ -4,23 +4,23 @@
 #' \code{mat.tr} calcule une matrice de transition
 #' 
 #' @details 
-#' La variable de la periode t est toujours compare a celle de la periode t plus
-#' l'intervalle k, l'intervalle comparatif k est donc defini par les donnees.
+#' La variable de la période t est toujours comparée à celle de la période t plus
+#' l'intervalle k. L'intervalle comparatif k est donc defini par les données.
 #' 
-#' @param var.t une variable discrete correspondant aux etats possibles a la periode t
-#' @param var.tpk une variable discrete correspondant aux etats possibles a la periode t 
+#' @param var.t une variable discrète correspondant aux états possibles à la période t
+#' @param var.tpk une variable discrète correspondant aux états possibles à la période t 
 #' plus l'intervalle k
-#' @param data un dataframe dans lequel sont contenus var.t et var.tpk
-#' @param poids une variable contenant les poids a considerer
-#' @param prob un parametre logique indiquant si les cellules de la matrice retournee 
-#' doivent contenir des probabilites ou le nombre d'observations si retrouvant
+#' @param data un dataframe dans lequel sont contenues var.t et var.tpk
+#' @param poids une variable contenant les poids à considerer
+#' @param prob un paramètre logique indiquant si les cellules de la matrice retournée 
+#' doivent contenir des probabilités ou le nombre d'observations qu'elles contiennent
 #' @export
-#' @return une liste de 3 elements
+#' @return une liste de 3 éléments
 #' \item{CALL}{Appel de la fonction}
-#' \item{Poids}{Nom de la variable "poids" utilisee}
-#' \item{n.obs}{Nombre d'observations (si "poids" specifie, somme des poids individuels)}
-#' \item{taille.mat}{Taille de la matrice retournee}
-#' \item{matrice}{La matrice de transition calculee}
+#' \item{Poids}{Nom de la variable "poids" utilisée}
+#' \item{n.obs}{Nombre d'observations (si "poids" specifié, somme des poids individuels)}
+#' \item{taille.mat}{Taille de la matrice retournée}
+#' \item{matrice}{Matrice de transition calculée}
 #' 
 #' @author Nicolas Corneau-Tremblay
 #' 

@@ -1,7 +1,7 @@
-#' Fonctions pour le calcul de matrices de transition et d'indices de mobilite
+#' Fonctions pour le calcul de matrices de transition et d'indices de mobilité
 #' 
 #' MatMobil fournit des outils permettant le calcul de matrice de transition et
-#' d'indices de mobilite (et d'immobilite)
+#' d'indices de mobilité (et d'immobilité).
 #' 
 #' @docType package
 #' @name MatMobil-package

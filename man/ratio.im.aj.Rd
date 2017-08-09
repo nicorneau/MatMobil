@@ -2,7 +2,7 @@
 % Please edit documentation in R/ratio_im_aj.R
 \name{ratio.im.aj}
 \alias{ratio.im.aj}
-\title{Calcul du ratio d'immobilite ajuste}
+\title{Calcul du ratio d'immobilité ajusté}
 \usage{
 ratio.im.aj(mat)
 }
@@ -10,18 +10,18 @@ ratio.im.aj(mat)
 \item{mat}{une matrice de transition ou un objet "mat.tr"}
 }
 \value{
-une liste de 4 elements
+une liste de 4 éléments
 \item{CALL}{Appel de la fonction}
-\item{matrice}{La matrice de transition utilisee}
-\item{indice}{Le nom de l'indice calcule}
-\item{ind}{La valeur de l'indice calculee}
+\item{matrice}{Matrice de transition utilisée}
+\item{indice}{Nom de l'indice calculé}
+\item{ind}{Valeur de l'indice calculé}
 }
 \description{
-\code{ratio.im.aj} calcule le ratio d'immobilite ajuste d'une matrice de transition
+\code{ratio.im.aj} calcule le ratio d'immobilité ajusté d'une matrice de transition
 }
 \details{
-Proportion d'individu sur la diagonale de la matrice de transition plus ceux dans les 
-cellules adjacentes a la diagonale
+Proportion d'individu sur la diagonale de la matrice de transition et ceux contenus 
+dans les cellules adjacentes à la diagonale
 }
 \author{
 Nicolas Corneau-Tremblay

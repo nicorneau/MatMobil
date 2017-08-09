@@ -1,18 +1,18 @@
-#' @title Calcul du ratio d'immobilite
+#' @title Calcul du ratio d'immobilité
 #' 
 #' @description 
-#' \code{ratio.im} calcule le ratio d'immobilite d'une matrice de transition
+#' \code{ratio.im} calcule le ratio d'immobilité d'une matrice de transition
 #' 
 #' @details 
 #' A completer
 #' 
 #' @param mat une matrice de transition ou un objet "mat.tr"
 #' @export
-#' @return une liste de 4 elements
+#' @return une liste de 4 éléments
 #' \item{CALL}{Appel de la fonction}
-#' \item{matrice}{La matrice de transition utilisee}
-#' \item{indice}{Le nom de l'indice calcule}
-#' \item{ind}{La valeur de l'indice calculee}
+#' \item{matrice}{Matrice de transition utilisée}
+#' \item{indice}{Nom de l'indice calculé}
+#' \item{ind}{Valeur de l'indice calculé}
 #' 
 #' @author Nicolas Corneau-Tremblay
 #' 

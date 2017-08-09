@@ -1,19 +1,19 @@
-#' @title Calcul du ratio de mobilite ajuste
+#' @title Calcul du ratio de mobilité ajusté
 #' 
 #' @description 
-#' \code{ratio.mob.aj} calcule le ratio de mobilite ajuste d'une matrice de transition
+#' \code{ratio.mob.aj} calcule le ratio de mobilite ajusté d'une matrice de transition
 #' 
 #' @details 
-#' 1 - Proportion d'individu sur la diagonale de la matrice de transition plus ceux dans 
-#' les cellules adjacentes a la diagonale
+#' 1 - Proportion d'individu sur la diagonale de la matrice de transition et ceux contenus
+#' dans les cellules adjacentes à la diagonale
 #' 
 #' @param mat une matrice de transition ou un objet "mat.tr"
 #' @export
-#' @return une liste de 4 elements
+#' @return une liste de 4 éléments
 #' \item{CALL}{Appel de la fonction}
-#' \item{matrice}{La matrice de transition utilisee}
-#' \item{indice}{Le nom de l'indice calcule}
-#' \item{ind}{La valeur de l'indice calculee}
+#' \item{matrice}{Matrice de transition utilisée}
+#' \item{indice}{Nom de l'indice calculé}
+#' \item{ind}{Valeur de l'indice calculé}
 #' 
 #' @author Nicolas Corneau-Tremblay
 #' 

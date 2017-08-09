@@ -6,9 +6,9 @@ Date: 2017-08-03
 Author: Nicolas Corneau-Tremblay
 Maintainer: Nicolas Corneau-Tremblay <nicolas.corneau-tremblay.1@ulaval.ca>
 Description: Ce package permet de calculer des matrices de transition et des indices
-	de mobilite. Il permet egalement de calculer differents indices sur un intervalle
-	de temps. Il a ete developpe a l'Universite Laval dans le cadre d'un projet 
-	subventionne par le FQR-SC.
+	de mobilite. Il permet egalement de calculer differents indices sur un intervalle de temps. 
+	Il a ete developpe a l'Universite Laval dans le cadre d'un projet 
+	de recherche subventionne par le FQR-SC.
 LazyData: yes
 License: GPL-3
 RoxygenNote: 6.0.1

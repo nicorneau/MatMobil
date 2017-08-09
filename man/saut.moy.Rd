@@ -10,17 +10,17 @@ saut.moy(mat)
 \item{mat}{une matrice de transition ou un objet "mat.tr"}
 }
 \value{
-une liste de 4 elements
+une liste de 4 éléments
 \item{CALL}{Appel de la fonction}
-\item{matrice}{La matrice de transition utilisee}
-\item{indice}{Le nom de l'indice calcule}
-\item{ind}{La valeur de l'indice calculee}
+\item{matrice}{Matrice de transition utilisée}
+\item{indice}{Nom de l'indice calculé}
+\item{ind}{Valeur de l'indice calculé}
 }
 \description{
 \code{trace.norm} calcule le saut moyen d'une matrice de transition
 }
 \details{
-Aussi appele indice de Bartholomew. Somme sur i des pi_i * somme sur j
+Aussi appelé indice de Bartholomew. Somme sur i des pi_i * somme sur j
 des p_ij * valeur absolue de i moins j
 }
 \author{

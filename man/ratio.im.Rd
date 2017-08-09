@@ -2,7 +2,7 @@
 % Please edit documentation in R/ratio_im.R
 \name{ratio.im}
 \alias{ratio.im}
-\title{Calcul du ratio d'immobilite}
+\title{Calcul du ratio d'immobilité}
 \usage{
 ratio.im(mat)
 }
@@ -10,14 +10,14 @@ ratio.im(mat)
 \item{mat}{une matrice de transition ou un objet "mat.tr"}
 }
 \value{
-une liste de 4 elements
+une liste de 4 éléments
 \item{CALL}{Appel de la fonction}
-\item{matrice}{La matrice de transition utilisee}
-\item{indice}{Le nom de l'indice calcule}
-\item{ind}{La valeur de l'indice calculee}
+\item{matrice}{Matrice de transition utilisée}
+\item{indice}{Nom de l'indice calculé}
+\item{ind}{Valeur de l'indice calculé}
 }
 \description{
-\code{ratio.im} calcule le ratio d'immobilite d'une matrice de transition
+\code{ratio.im} calcule le ratio d'immobilité d'une matrice de transition
 }
 \details{
 A completer

@@ -4,8 +4,8 @@
 \name{MatMobil-package}
 \alias{MatMobil-package}
 \alias{MatMobil}
-\title{Fonctions pour le calcul de matrices de transition et d'indices de mobilite}
+\title{Fonctions pour le calcul de matrices de transition et d'indices de mobilité}
 \description{
 MatMobil fournit des outils permettant le calcul de matrice de transition et
-d'indices de mobilite (et d'immobilite)
+d'indices de mobilité (et d'immobilité).
 }
