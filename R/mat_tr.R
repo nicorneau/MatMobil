@@ -36,8 +36,8 @@ mat.tr <- function(var.t, var.tpk, data, poids = NULL, prob=FALSE) {
     } else{
         
         if(!is.null(poids)) {
-            matrice <- matrix(rep(0, times = length(unique(data[,c(var.t)]))*length(unique(data[,c(var.tpk)]))),
-                              ncol = length(unique(data[,c(var.tpk)])))
+            matrice <- matrix(rep(0, times = length(sort(unique(data[,c(var.t)])))*length(sort(unique(data[,c(var.tpk)])))),
+                              ncol = length(sort(unique(data[,c(var.tpk)]))))
             
             for (col in sort(unique(data[,c(var.tpk)]))){
                 
