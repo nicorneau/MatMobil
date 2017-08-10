@@ -44,7 +44,7 @@ mat.tr <- function(var.t, var.tpk, data, poids = NULL, prob=FALSE) {
                 for(row in sort(unique(data[,c(var.t)]))) {
                     
                     matrice[row, col] <- sum(data[subset(data, select = var.t) == row
-                                                  & subset(data, select = var.tpk) == col, poids])
+                                                  & subset(data, select = var.tpk) == col, poids], na.rm = TRUE)
                     
                 }
             }
