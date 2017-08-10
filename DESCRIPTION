@@ -1,7 +1,7 @@
 Package: MatMobil
 Type: Package
 Title: Calcul de matrices de transition et d'indices de mobilite
-Version: 1.1
+Version: 1.2
 Date: 2017-08-03
 Author: Nicolas Corneau-Tremblay
 Maintainer: Nicolas Corneau-Tremblay <nicolas.corneau-tremblay.1@ulaval.ca>
