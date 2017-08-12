@@ -69,6 +69,8 @@ ind.mob.tps <- function(debut, fin, intervalle, var.t, var.tpk, data, periode = 
         
         ind.ratio.mob <- vector(, length(seq(debut, fin, intervalle)))
         ind.ratio.mob.aj <- vector(, length(seq(debut, fin, intervalle)))
+        ind.mob.bas <- vector(, length(seq(debut, fin, intervalle)))
+        ind.mob.haut <- vector(, length(seq(debut, fin, intervalle)))
         ind.trace.norm <- vector(, length(seq(debut, fin, intervalle)))
         ind.saut.moy <- vector(, length(seq(debut, fin, intervalle)))
         
@@ -77,6 +79,8 @@ ind.mob.tps <- function(debut, fin, intervalle, var.t, var.tpk, data, periode = 
             mat <- mat.tr(var.t, var.tpk, data[subset(data, select = periode) == i, ], poids = poids, prob = TRUE)
             ind.ratio.mob[tour] <- ratio.mob(mat)$ind
             ind.ratio.mob.aj[tour] <- ratio.mob.aj(mat)$ind
+            ind.mob.bas[tour] <- mob.bas(mat)$ind
+            ind.mob.haut[tour] <- mob.haut(mat)$ind
             ind.trace.norm[tour] <- trace.norm(mat)$ind
             ind.saut.moy[tour] <- saut.moy(mat)$ind
             n.obs[tour] <- mat$n.obs
@@ -86,8 +90,12 @@ ind.mob.tps <- function(debut, fin, intervalle, var.t, var.tpk, data, periode = 
             tour <- tour + 1
         }
         
-        indices <- c("Ratio de mobilite", "Ratio de mobilite ajuste", "Trace normalisee", "Saut moyen (Bartholomew)")
-        ind <- cbind.data.frame(periode.t, n.obs, trans, ind.ratio.mob, ind.ratio.mob.aj, ind.trace.norm, ind.saut.moy)
+        indices <- c("Ratio de mobilite", "Ratio de mobilite ajuste",
+                     "Mobilite vers le bas", "Mobilite vers le haut",
+                     "Trace normalisee", "Saut moyen (Bartholomew)")
+        ind <- cbind.data.frame(periode.t, n.obs, trans, ind.ratio.mob,
+                                ind.ratio.mob.aj, ind.mob.bas, ind.mob.haut,
+                                ind.trace.norm, ind.saut.moy)
         
     }
     

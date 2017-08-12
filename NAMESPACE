@@ -2,6 +2,8 @@
 
 export(ind.mob.tps)
 export(mat.tr)
+export(mob.bas)
+export(mob.haut)
 export(ratio.im)
 export(ratio.im.aj)
 export(ratio.mob)
