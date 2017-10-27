@@ -1,5 +1,5 @@
 #construire le package
-setwd("/Users/nicot/Documents/github")
+setwd("/Users/nct/Documents/github")
 library(roxygen2)
 roxygenize("MatMobil")
 system("R CMD build MatMobil")

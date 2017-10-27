@@ -20,42 +20,31 @@
 #' @example 
 #' A completer
 ratio.im.aj <- function(mat){
-    if (inherits(mat, "mat.tr"))  mat <- mat$matrice
+  if (inherits(mat, "mat.tr"))  mat <- mat$matrice
+  
+  if(is.matrix(mat)) {
     
-    if(is.matrix(mat)) {
+    temp <- 0
+    
+    for (col in 1:ncol(mat)){
+      
+      for(row in 1:nrow(mat)) {
         
-        #pour une matrice 4x4
-        if(nrow(mat) == 4) {
-            
-            ind <- (sum(mat[c(1,2),c(1,2)]) +
-                        sum(mat[c(3, 4),c(3, 4)]) +
-                        mat[3,2] +
-                        mat[2,3]) /
-                sum(mat)
-            
-        } else if (nrow(mat) == 5) {
-            #pour une matrice 5x5
-            ind <- (sum(mat[c(1,2),c(1,2)]) +
-                        sum(mat[c(4, 5),c(4, 5)]) +
-                        sum(mat[3, c(2, 3, 4)]) +
-                        mat[2,3] +
-                        mat[4,3]) /
-                sum(mat)
-            
-        } else {
-            
-            stop("dimensions inadequates")
-            
-        }
-    } else {
-        
-        stop("'mat' n'est pas une matrice")
+        if(abs(col - row) <= 1) temp <- temp + mat[row, col]
+      }
     }
     
-    output <- list(CALL = match.call(),
-                   matrice = mat,
-                   indice = "Ratio d'immobilite ajuste",
-                   ind = ind)
-    class(output) <- c("ratio.im.aj", "list")
-    return(output)
+    ind <- temp / sum(mat)
+    
+  } else {
+    
+    stop("'mat' n'est pas une matrice")
+  }
+  
+  output <- list(CALL = match.call(),
+                 matrice = mat,
+                 indice = "Ratio d'immobilite ajuste",
+                 ind = ind)
+  class(output) <- c("ratio.im.aj", "list")
+  return(output)
 }
